@@ -1,55 +1,74 @@
+/* Importe la police "Montserrat" depuis Google Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
 
+/* Styles généraux pour le corps de la page */
 body {
-	max-width: 1200px;
-	margin: auto;
-	padding: 16px;
-	font-family: 'Montserrat', sans-serif;
+	max-width: 1200px; /* Définit la largeur maximale du corps de la page */
+	margin: auto; /* Centre le contenu horizontalement */
+	padding: 16px; /* Ajoute un espace intérieur autour du contenu */
+	font-family: 'Montserrat', sans-serif; /* Utilise la police Montserrat pour le texte avec une sauvegarde sur sans-serif */
 }
 
+/* Styles pour l'en-tête de la page */
 header {
-	display: flex;
-	flex-direction: row;
-	align-items: center;
-	margin-bottom: 16px;
-	padding: 8px;
-	background-color: #7451eb;
-	text-align: center;
-	color: white;
+	display: flex; /* Utilise la disposition flex pour les éléments enfants */
+	flex-direction: row; /* Définit la direction des éléments enfants en ligne */
+	align-items: center; /* Centre verticalement les éléments enfants */
+	margin-bottom: 16px; /* Ajoute un espacement en bas de l'en-tête */
+	padding: 8px; /* Ajoute un espacement intérieur autour de l'en-tête */
+	background-color: #7451eb; /* Définit la couleur d'arrière-plan de l'en-tête */
+	text-align: center; /* Centre le texte horizontalement */
+	color: white; /* Définit la couleur du texte */
 }
 header img {
-	height: 60px;
-	margin-left: 1rem;
+	height: 60px; /* Définit la hauteur de l'image dans l'en-tête */
+	margin-left: 1rem; /* Ajoute un espacement à gauche de l'image */
 }
 header h1 {
-	flex-grow: 1;
+	flex-grow: 1; /* Permet à l'élément de remplir l'espace disponible dans le conteneur flex */
 }
 
+/* Styles pour la section principale de la page */
 main {
-	display: flex;
-	flex-direction: row;
+	display: flex; /* Utilise la disposition flex pour les éléments enfants */
+	flex-direction: row; /* Définit la direction des éléments enfants en ligne */
 }
 
+/* Styles pour la section des filtres */
 .filtres {
-	border-radius: 4px;
-	box-shadow: 0px 0px 4px gray;
-	margin: 8px;
-	padding: 8px;
-	min-width: 300px;
-	min-height: 400px;
+	border-radius: 4px; /* Définit le rayon de la bordure pour arrondir les coins */
+	box-shadow: 0px 0px 4px gray; /* Ajoute une ombre légère autour de la section */
+	margin: 8px; /* Ajoute un espacement autour de la section */
+	padding: 8px; /* Ajoute un espacement intérieur autour du contenu de la section */
+	min-width: 300px; /* Définit la largeur minimale de la section */
+	min-height: 400px; /* Définit la hauteur minimale de la section */
 }
 .filtres h3 {
-	text-align: center;
+	text-align: center; /* Centre le texte horizontalement à l'intérieur de la section */
 }
 
+/* Styles pour la section des fiches */
 .fiches {
-	flex: 1;
-	margin: 8px;
+	flex: 1; /* Permet à la section de remplir l'espace disponible dans le conteneur flex */
+	margin: 8px; /* Ajoute un espacement autour de la section */
+	display: grid; /* Utilise la disposition grid pour les éléments enfants */
+	grid-template-columns: repeat(3, 1fr); /* Crée une grille avec trois colonnes égales */
+	gap: 4px; /* Ajoute un espacement entre les éléments enfants de la grille */
 }
-.fiches img {
-	max-width: 200px;
+.fiches article {
+	border: 1px solid black; /* Définit une bordure autour de chaque article */
+	padding: 4px; /* Ajoute un espacement intérieur autour du contenu de chaque article */
 }
-.fiches p {
-	margin-top: 4px;
-	margin-bottom: 4px;
+.fiches article img {
+	display: block; /* Affiche l'image en tant que bloc pour centrer horizontalement */
+	margin-left: auto; /* Centre l'image horizontalement */
+	margin-right: auto; /* Centre l'image horizontalement */
+	max-width: 200px; /* Définit la largeur maximale de l'image */
+}
+.fiches article p {
+	margin-top: 4px; /* Ajoute un espacement en haut du paragraphe */
+	margin-bottom: 4px; /* Ajoute un espacement en bas du paragraphe */
+}
+.fiches article h2 {
+	text-align: center; /* Centre le texte horizontalement à l'intérieur de chaque article */
 }
