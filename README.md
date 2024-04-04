@@ -11,7 +11,7 @@ Après avoir cloné le repo utilisation de Node comme serveur web et VSCode comm
 
 Si vous utiliser VSCode ou un autre éditeur de code avec une extersion de serveur web comme live server, vous pouvez lancer direcement votre site avec l'extension que vous utilisez habituellement. 
 
-Instalation des dépendances de ce projet avec `npm install` puis lancer le projet via la commande `npm start`. Termninal le lien vers le site (par defaut http://127.0.0.1:8080 )
+Instalation des dépendances de ce projet avec `npm install` puis j'ai lancé le projet via la commande `npm start`. Termninal le lien vers le site (par defaut http://127.0.0.1:8080 )
 
 /1 commit par étape/
 
@@ -22,3 +22,10 @@ Utilisez des opérateurs pour vérifier vos données avant de les afficher : l�
 
 Etape 3 : Inserer les 4 filtres
 Pour parcourir vos données afin de générer autant d’éléments du DOM qu’il y a d’éléments dans vos listes, utilisation de la boucle for et utilisation de la fonction sort pour réordonner les éléments. Utilisation de la fonction filter pour éliminer les éléments non désirés et conserver les éléments choisis.
+
+Etape 4 : Inserez la MAP
+Utilisation de la syntaxe lambda pour écrire des fonctions JavaScript simplifiées et fluidifier la lecture du code.
+Mappez deux listes avec la fonction map pour transformer une information, pièces abordable et pièces disponible.
+Supprimez des éléments dans une liste avec la fonction splice.
+
+Etape 5 : 
