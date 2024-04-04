@@ -33,5 +33,11 @@ La propriété innerHTML permet d’effacer ou de remplacer le contenu d’un é
 En manipulant le DOM, j'ai généré une nouvelle version de la page web.
 La combinaison de ces deux opérations permet de mettre à jour la page lorsque l’utilisateur interagit avec elle.
 
-Etape 6 : 
+Etape 6 : Envoyez une requete HTTP depuis le navigateur avec la fonction fetch 
+Cette dernière prend en argument d’appel une chaîne de caractères comprenant l’adresse du serveur web et le chemin qui décrit la ressource que nous souhaitons manipuler. Le verbe utilisé par défaut par la fonction fetch est GET.
+J'ai cloné le dossier Back-end, puis j'ai lancé l'API pour récuperer les avis.
+serveur : http://localhost:8081/
+
+Etape 7 : 
+
 
