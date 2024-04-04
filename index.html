@@ -1,31 +1,38 @@
 <!DOCTYPE html>
 <html lang="fr">
 	<head>
-		<meta charset="utf-8"> <!-- Définit l'encodage des caractères -->
-		<title>Les Bonnes Pièces</title> <!-- Définit le titre de la page -->
-		<link rel="stylesheet" href="styles.css"> <!-- Lie le fichier CSS pour les styles -->
-		<script type="module" src="pieces.js"></script> <!-- Lie le fichier JavaScript pour les fonctionnalités -->
+		<meta charset="utf-8">
+		<title>Les Bonnes Pièces</title>
+		<link rel="stylesheet" href="styles.css">
+		<script type="module" src="pieces.js"></script>
 	</head>
 	<body>
 		<header>
-			<img src="images/logo-les-bonnes-pieces.png" alt="LOGO"> <!-- Affiche le logo avec un texte alternatif -->
-			<h1>Les Bonnes Pièces</h1> <!-- Affiche le titre de la page -->
+			<img src="images/logo-les-bonnes-pieces.png" alt="LOGO">
+			<h1>Les Bonnes Pièces</h1>
 		</header>
 		<main>
 			<!-- Menu de recherche -->
 			<section class="filtres">
-				<h3>Filtres</h3> <!-- Affiche le titre de la section des filtres -->
-				<button class="btn-trier">Trier par prix croissant</button> <!-- Bouton pour trier par prix croissant -->
+				<h3>Filtres</h3>
+				<button class="btn-trier">Trier par prix croissant</button>
 				<br>
-				<button class="btn-filtrer">Filtrer les pièces non abordables</button> <!-- Bouton pour filtrer les pièces non abordables -->
+				<button class="btn-filtrer">Filtrer les pièces non abordables</button>
 				<br>
-				<button class="btn-decroissant">Trier par prix décroissant</button> <!-- Bouton pour trier par prix décroissant -->
+				<button class="btn-decroissant">Trier par prix décroissant</button>
 				<br>
-				<button class="btn-nodesc">Filtrer les pièces sans description</button> <!-- Bouton pour filtrer les pièces sans description -->
+				<button class="btn-nodesc">Filtrer les pièces sans description</button>
 			</section>
 
 			<!-- Fiches produits -->
-			<section class="fiches"> <!-- Section pour afficher les fiches produits -->
+			<section class="fiches">
+				<!-- Code ajouté -->
+				<div class="abordables">
+					<p>Pièces abordables:</p>
+				</div>
+				<div class="disponibles">
+					<p>Pièces disponibles:</p>	
+				</div>
 			</section>
 		</main>
 	</body>
