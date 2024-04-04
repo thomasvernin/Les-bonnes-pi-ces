@@ -11,7 +11,7 @@ Après avoir cloné le repo utilisation de Node comme serveur web et VSCode comm
 
 Si vous utiliser VSCode ou un autre éditeur de code avec une extersion de serveur web comme live server, vous pouvez lancer direcement votre site avec l'extension que vous utilisez habituellement. 
 
-Instalation des dépendances de ce projet avec `npm install` puis lancer le projet via la commande `npm start`. Termninal le lien vers le site (par defaut http://127.0.0.1:8080 )
+Instalation des dépendances de ce projet avec `npm install` puis j'ai lancé le projet via la commande `npm start`. Termninal le lien vers le site (par defaut http://127.0.0.1:8080 )
 
 /1 commit par étape/
 
