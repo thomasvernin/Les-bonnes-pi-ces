@@ -1,4 +1,11 @@
-Site internet : Les bonnes pieces 
+Certificat de réussite : "Créez des pages web dynamiques avec JavaScript" 
+Délivré par OpenClassrooms a Thomas Vernin
+
+Compétences aquises : JAVASCRIPT, DOM, API, JSON
+
+_______
+
+Site internet : LES BONNES PIECES 
 
 Après avoir cloné le repo utilisation de Node comme serveur web et VSCode comme éditeur de code.
 
