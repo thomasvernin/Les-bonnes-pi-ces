@@ -38,6 +38,10 @@ Cette dernière prend en argument d’appel une chaîne de caractères comprenan
 J'ai cloné le dossier Back-end, puis j'ai lancé l'API pour récuperer les avis.
 serveur : http://localhost:8081/
 
-Etape 7 : 
+Etape 7 : Traité la réponse du serveur 
+J'ai utilisé la syntaxe async/await pour mettre en pause le programme en attendant la réponse.
+Désérialisation de mes données pour décoder le contenu de la réponse.
+Avec cette réponse, je peux mettre à jour la page web.
 
+Etape 8 : 
 
