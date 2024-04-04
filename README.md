@@ -1,10 +1,12 @@
-Installation
+Site internet : Les bonnes pieces 
 
-Après avoir cloné le repo vous avez plusieurs options pour lancer le projet. 
+Après avoir cloné le repo utilisation de Node comme serveur web et VSCode comme éditeur de code.
 
 Si vous utiliser VSCode ou un autre éditeur de code avec une extersion de serveur web comme live server, vous pouvez lancer direcement votre site avec l'extension que vous utilisez habituellement. 
 
-Dans le cas contraire vous pouvez installer les dépendances de ce projet avec `npm install` puis lancer le projet via la commande `npm start`. Vous verrez dans le termninal le lien vers le site (par defaut http://127.0.0.1:8080 )
+Instalation des dépendances de ce projet avec `npm install` puis lancer le projet via la commande `npm start`. Termninal le lien vers le site (par defaut http://127.0.0.1:8080 )
+
+/1 commit par étape/
 
 Etape 1 : Manipuler la syntaxe JSON pour ajouter les pieces avec leurs infos.
 
