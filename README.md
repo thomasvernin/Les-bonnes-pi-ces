@@ -43,5 +43,14 @@ J'ai utilisé la syntaxe async/await pour mettre en pause le programme en attend
 Désérialisation de mes données pour décoder le contenu de la réponse.
 Avec cette réponse, je peux mettre à jour la page web.
 
-Etape 8 : 
+Etape 8 : Sauvegarder les données grace a l' API HTTP "Ajouter un nouveau commentaire utilisateur en directe "
+Utilisez le deuxième argument de la fonction fetch pour personnaliser votre requête.
+Configurez l’objet du deuxième argument en renseignant trois propriétés :
+method pour le verbe HTTP ; body pour la charge utile ; headers pour les en-têtes.
+Pour créer une nouvelle ressource avec une API HTTP qui accepte le format JSON : le verbe POST ;
+un body au format JSON ; un en-tête Content-Type application/json.
+
+Etape 9 : 
+
+
 
