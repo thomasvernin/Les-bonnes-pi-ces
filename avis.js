@@ -49,8 +49,8 @@ export function ajoutListenersAvis() {
  }
 
  export async function afficherGraphiqueAvis() {
-    // Calcul du nombre total de commentaires par quantité d'étoiles attribuées
-    const avis = await fetch("http://localhost:8081/avis").then(avis => avis.json());
+    // Récupération des avis depuis le serveur
+    const avis = await fetch("http://localhost:8081/avis").then(response => response.json());
     const nb_commentaires = [0, 0, 0, 0, 0];
 
     for (let commentaire of avis) {
@@ -80,7 +80,39 @@ export function ajoutListenersAvis() {
         document.querySelector("#graphique-avis"),
         config,
     );
+
+    // Rendu du graphique de disponibilité
+    const nbCommentairesDispo = nb_commentaires[0]; // Nombre de commentaires avec 5 étoiles
+    const nbCommentairesNonDispo = avis.length - nbCommentairesDispo; // Le reste des commentaires
+    // Légende qui s'affichera sur la gauche à côté de la barre horizontale
+    const labelsDispo = ["Disponibles", "Non dispo."];
+    // Données et personnalisation du graphique
+    const dataDispo = {
+        labels: labelsDispo,
+        datasets: [{
+            label: "Nombre de commentaires",
+            data: [nbCommentairesDispo, nbCommentairesNonDispo],
+            backgroundColor: "rgba(0, 230, 255, 1)", // turquoise
+        }],
+    };
+    // Objet de configuration final
+    const configDispo = {
+        type: "bar",
+        data: dataDispo,
+    };
+    // Rendu du graphique dans l'élément canvas
+    const graphiqueDispo = new Chart(
+        document.querySelector("#graphique-dispo"),
+        configDispo,
+    );
 }
+
+
+
+ 
+
+
+
 
  
  
